@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia en Cerró Chirripó</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-search-container">
+           <h1>Farmacia Chirripó</h1>  
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Título-->
+        <header id="ID">
+            <h2>Farmacia en Cerró Chirripó</h2>
+            <p>Servicio de atención médica integral</p>
+        </header>
+
+        <!-- Carrusel de imágenes -->
+        <div class="carrousel">
+            <div class="conteCarrousel">
+                <div class="itemCarrousel" id="itemCarrousel-1">
+                    <div class="itemCarrouselTarjeta"><img src="Paracetamol.png" alt=""></div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-3">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-2">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-2">
+                    <div class="itemCarrouselTarjeta"><img src="Ibuprofeno.png" alt=""></div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-1">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-3">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrousel" id="itemCarrousel-3">
+                    <div class="itemCarrouselTarjeta"><img src="NIKZON.png" alt=""></div>
+                    <div class="itemCarrouselArrows">
+                        <a href="#itemCarrousel-2">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#itemCarrousel-1">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="conteCarrouselController">
+                <a href="#itemCarrousel-1">•</a>
+                <a href="#itemCarrousel-2">•</a>
+                <a href="#itemCarrousel-3">•</a>
+            </div>
+        </div>
+
+    <!--Apartado del 2 de septiembre-->        
+    <h1 id="mainTitle">Productos Farmacéuticos</h1>
+    <div id="products">
+        <div id="medicamentoA" class="product">
+            <h2>Acetaminofen</h2>
+            <p>El Acetaminofén, solo o combinado, se utiliza habitualmente para bajar la fiebre y aliviar el dolor de cabeza, muscular, menstrual, de garganta, de muelas y de espalda. </p>
+        </div>
+        <div id="medicamentoB" class="product">
+            <h2>Ibuprofeno</h2>
+            <p>El ibuprofeno de venta libre se usa para reducir la fiebre y aliviar dolores menores, cefaleas, dolor muscular, artritis, periodos menstruales, resfriado común, dolor de muelas y dolor de espalda.</p>
+        </div>
+    </div>
+
+    <button id="addProductButton">Agregar Producto</button>
+    <button id="highlightButton">Resaltar Productos</button>
+    <select id="colorSelector">
+        <option value="#ffffff">Blanco</option>
+        <option value="#1a3b88">Azul</option>
+        <option value="#f5f5dc">Beige</option>
+        <option value="#ff0000">Rojo</option>
+        <option value="#008000">Verde</option>
+    </select>
+
+    <div id="info">
+        <p>Nuestros productos están diseñados para brindar atención médica integral.</p>
+    </div>
+    <!--Script de los productos del 2 de septiembre-->
+    <script>
+        // 1. getElementById - Seleccionar y modificar el título principal
+        const mainTitle = document.getElementById('mainTitle');
+        mainTitle.textContent = 'Conoce nuestros Productos Farmacéuticos';
+
+        // 2. getElementsByClassName - Resaltar productos con el color seleccionado
+        const products = document.getElementsByClassName('product');
+        document.getElementById('highlightButton').addEventListener('click', () => {
+            const selectedColor = document.getElementById('colorSelector').value;
+            for (let i = 0; i < products.length; i++) {
+                products[i].classList.add('highlight');
+                products[i].style.backgroundColor = selectedColor;
+            }
+        });
+
+        // 3. createElement y appendChild - Agregar un nuevo producto
+        const addProductButton = document.getElementById('addProductButton');
+        addProductButton.addEventListener('click', () => {
+            const newProduct = document.createElement('div');
+            newProduct.classList.add('product');
+            newProduct.innerHTML = `
+                <h2>Nikzon</h2>
+                <p>Auxiliar en el tratamiento de las hemorroides y la isnuficiencia venosa crónica. Alivia las várices hemorroidales, además de favorecer el restablecimiento de la flora bacteriana y funcionar como un antiflatulento.</p>
+            `;
+            document.getElementById('products').appendChild(newProduct);
+        });
+
+        // 4. setAttribute y getAttribute - Agregar un atributo de datos personalizado
+        const medicamentoA = document.getElementById('medicamentoA');
+        medicamente
+    </Script>
+
+
+    <!-- Sección de productos farmacéuticos -->
+<section>
+    <h2>Productos
+    </h2>
+    <!-- Tarjeta de producto 1 -->
+    <div class="product-card small">
+        <img src="producto1.png" alt="Imagen del producto 1">
+        <h3>Omeprazol</h3>
+        <p> Trata acidez estomacal y úlceras.
+        </p>
+    </div>
+    <!-- Tarjeta de producto 2 -->
+    <div class="product-card small">
+        <img src="producto2.png" alt="Imagen del producto 2">
+        <h3>Amoxicilina</h3>
+        <p> Combate infecciones bacterianas.</p>
+    </div>
+    <!-- Tarjeta de producto 3 -->
+    <div class="product-card small">
+        <img src="producto3.png" alt="Imagen del producto 3">
+        <h3>Loratadina</h3>
+        <p> Alivia los síntomas de alergias.</p>
+    </div>
+    <!-- Tarjeta de producto 4 -->
+    <div class="product-card small">
+        <img src="producto4.png" alt="Imagen del producto 4">
+        <h3>Metformina</h3>
+        <p>Controla la diabetes tipo 2.</p>
+    </div>
+    <!-- Tarjeta de producto 5 -->
+    <div class="product-card small">
+        <img src="producto5.png" alt="Imagen del producto 5">
+        <h3>Enalapril</h3>
+        <p> Reduce la presión arterial y trata insuficiencia cardíaca.</p>
+    </div>
+    <!-- Agrega más tarjetas de productos según sea necesario -->
+</section>
+        <!-- Footer con información de contacto -->
+        <footer>
+            <p>Dirección: Av. Principal, Cerró Chirripó</p>
+            <p>Teléfono: 2222-2222</p>
+            <p>E-mail: farmacia.chirripo@gmail.com</p>
+        </footer>
+    </main>
+
+</body>
+</html>

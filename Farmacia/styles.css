@@ -1,0 +1,165 @@
+* {
+    font-family: Verdana, sans-serif
+;
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff; /* Beige */
+    color: #1a3b88; /* Azul */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#ID{
+    text-align: center;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #f5f5dc; 
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-search-container{
+    width: 500px;
+    font-size: large;
+}
+
+
+
+.search-color-selector {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el carrusel */
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-color: rgb(226, 50, 50);
+}
+
+#itemCarrousel-2{
+    background-color: rgb(50, 200, 226);
+}
+
+#itemCarrousel-3{
+    background-color: rgb(200, 226, 50);
+}
+
+.conteCarrouselController{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a{
+    text-decoration: none;
+    font-size: 2em;
+    color: grey;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+
+.product-card.small {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin: auto; /* Nueva línea */
+  }
+  
+  .product-card.small img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 10px;
+  }
+
+  /* Css del trabajo del 2 de septiembre*/
+  .highlight {
+    background-color: yellow;
+}
+.product {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+#festivities {
+    margin-top: 20px;
+}
+#info {
+    display: none;
+    color: blue;
+    margin-top: 10px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: beige; /* Blanco */
+    color: #1a3b88; /* Azul */
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border: 10px;
+}
