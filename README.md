@@ -1,0 +1,2 @@
+# MequieroMorir
+Odio desarrollo 
